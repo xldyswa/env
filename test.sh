@@ -50,7 +50,7 @@ cp /home/seapapa/prepare/qemu_img/* /home/seapapa/work/images/ubuntu/server
 cd /home/seapapa/work/images/ubuntu/server
 qemu-img convert -f qcow2 -O raw noble-server-cloudimg-amd64.img image.img
 
-# 设置云镜像的root密码unzip nerdtree.zip
+# 设置云镜像的root密码
 sudo apt install libguestfs-tools -y
 sudo virt-customize -a image.img --root-password password:1
 
